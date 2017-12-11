@@ -1,6 +1,7 @@
-package api
+package api_test
 
 import (
+	"github.com/anapaulagomes/go-tunefy/api"
 	"net/http"
 	"net/http/httptest"
 	"testing"
@@ -13,7 +14,7 @@ func TestHealthCheckHandler(t *testing.T) {
 	}
 
 	rr := httptest.NewRecorder()
-	handler := http.HandlerFunc(HealthCheck)
+	handler := http.HandlerFunc(api.HealthCheck)
 
 	handler.ServeHTTP(rr, req)
 
@@ -30,7 +31,7 @@ func TestHomeHandler(t *testing.T) {
 	}
 
 	rr := httptest.NewRecorder()
-	handler := http.HandlerFunc(Home)
+	handler := http.HandlerFunc(api.Home)
 
 	handler.ServeHTTP(rr, req)
 

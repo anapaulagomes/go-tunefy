@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
-	"tunefy/api"
+	"github.com/anapaulagomes/go-tunefy/api"
 )
 
 func main() {
