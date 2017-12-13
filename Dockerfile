@@ -10,5 +10,3 @@ ADD . $SRC_DIR
 RUN cd $SRC_DIR; go build -o gotunefy; cp gotunefy /go-tunefy/
 
 ENTRYPOINT ["./gotunefy"]
-EXPOSE 8181
-
