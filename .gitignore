@@ -3,3 +3,4 @@
 # secrets
 client-secret.json
 credentials.tar.gz
+.env
